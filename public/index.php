@@ -8,21 +8,11 @@
  * Project:   MVC-2021
  */
 
-// require  dirname(__DIR__) . '/vendor/autoload.php';
-require  '../vendor/autoload.php';
-
 /**
  * Autoloader
- * @param $class
  */
-spl_autoload_register(
-    function ($class) {
-        $root = dirname(__DIR__); // Gets the parent directory
-        $file = $root . '/' . str_replace('\\', '/', $class) . '.php';
-        if (is_readable($file)) {
-            require $root . '/' . str_replace('\\', '/', $class) . '.php';
-        }
-    });
+require  dirname(__DIR__) . '/vendor/autoload.php';
+
 /**
  * Routing
  */

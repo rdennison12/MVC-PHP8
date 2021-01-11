@@ -9,3 +9,4 @@
 * Created Users class for later administration use
 * Added the Twig templating framework
 * Begin testing the templating system
+* Begin implementing the model and configuration

@@ -11,6 +11,7 @@
 namespace App\Controllers;
 
 use \Core\View;
+use App\Models\Post;
 
 class Posts extends \Core\Controller
 {
@@ -21,12 +22,11 @@ class Posts extends \Core\Controller
      */
     public function indexAction()
     {
+        $posts = Post::getAll();
+
         View::renderTemplate('Posts/index.html', [
-            'name' => 'rick',
-            'colors' => ['red', 'white', 'blue']
+            'posts' => $posts
         ]);
-        
-        // echo '<p>Route parameters: <pre>' . htmlspecialchars(print_r($this->route_params, true)) . '</pre></p>';
     }
 
     /**
