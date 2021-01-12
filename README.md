@@ -7,6 +7,8 @@
 * Begin building the router class
 * Add Base controller class
 * Created Users class for later administration use
-* Added the Twig templating framework
-* Begin testing the templating system
+* Added the Twig template framework
+* Begin testing the templates
 * Begin implementing the model and configuration
+* MVC framework complete
+    * Next step is adding Registration and Login System

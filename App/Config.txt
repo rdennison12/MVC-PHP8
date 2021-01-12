@@ -1,0 +1,44 @@
+<?php
+/**
+ * Created by Rick Dennison
+ * Date:      1/11/21
+ *
+ * File Name: Config.txt
+ * Project:   MVC-2021
+ */
+
+namespace App;
+
+
+class Config
+{
+    /**
+    * Change the .txt to .php
+    * then add the DB name, username, and password
+    */
+    /**
+     * Database host
+     * Default host name change if different
+     * locally or on hosting server
+     * @var string
+     */
+    const DB_HOST = 'localhost';
+
+    /**
+     * Database name
+     * @var string
+     */
+    const DB_NAME = 'YourDBName';
+
+    /**
+     * Database user
+     * @var string
+     */
+    const DB_USER = 'YourDBUsername';
+
+    /**
+     * Database password
+     * @var string
+     */
+    const DB_PASSWORD = 'YourDBPassword';
+}

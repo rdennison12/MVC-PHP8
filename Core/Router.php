@@ -10,6 +10,8 @@
 
 namespace Core;
 
+use Exception;
+
 class Router
 {
 
@@ -76,6 +78,7 @@ class Router
 
     /**
      * @param string $url The route URL
+     * @throws Exception
      * @return void
      */
     public function dispatch($url)
@@ -98,14 +101,13 @@ class Router
                     $controller_object->$action();
 
                 } else {
-                    echo "Method $action (in controller $controller) not found";
-                    // throw new \Exception("Method $action in controller $controller cannot be called directly - remove the Action suffix to call this method");
+                    throw new \Exception("Method $action (in controller $controller) not found");
                 }
             } else {
-                echo "Controller class $controller not found";
+                throw new \Exception("Controller class $controller not found");
             }
         } else {
-            echo 'No route matched.';
+            throw new \Exception( 'No route matched.', 404);
         }
     }
 

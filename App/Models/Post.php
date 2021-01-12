@@ -14,6 +14,9 @@ use PDOException;
 
 class Post extends \Core\Model
 {
+    /**
+     * @return mixed
+     */
     public static function getAll()
     {
         try {

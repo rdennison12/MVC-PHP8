@@ -10,6 +10,8 @@
 namespace Core;
 
 
+use function get_class;
+
 abstract class Controller
 {
     /**
@@ -37,8 +39,7 @@ abstract class Controller
      *
      * @param string $name Method name
      * @param array $args Arguments passed to the method
-     *
-     * @return void
+     * @throws \Exception
      */
     public function __call($name, $args)
     {
@@ -49,7 +50,8 @@ abstract class Controller
                 $this->after();
             }
         } else {
-            echo "Method $method not found in controller " . get_class($this);
+           // echo "Method $method not found in controller " . get_class($this);
+            throw new \Exception("Method $method not found in controller" . get_class($this));
         }
     }
 
