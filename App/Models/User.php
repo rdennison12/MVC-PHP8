@@ -104,7 +104,7 @@ class User extends \Core\Model
      * @param string $email
      * @return bool
      */
-    public function emailExists($email)
+    public static function emailExists($email)
     {
         $sql = 'SELECT * FROM users WHERE email = :email';
 

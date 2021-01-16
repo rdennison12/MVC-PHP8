@@ -17,3 +17,4 @@ Description: This is a combination of three Udemy courses about building an MVC 
     * Next step is adding Registration and Login System
 * Start building Complete Registration and Login System
 * Add browser validation using JavaScript
+* Testing with PHP version 8.0
