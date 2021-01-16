@@ -76,12 +76,12 @@ class User extends \Core\Model
         if (filter_var($this->email, FILTER_VALIDATE_EMAIL) === false) {
             $this->errors[] = 'Invalid email';
         }
-        if ($this->emailExists($this->email)) {
+        if (static::emailExists($this->email)) {
             $this->errors[] = 'Email already taken.';
         }
 
         // Password
-        if ($this->password != $this->password_confirmation) {
+        if ($this->password != $this->password_conformation) {
             $this->errors[] = 'Password must match confirmation';
         }
 
@@ -104,7 +104,7 @@ class User extends \Core\Model
      * @param string $email
      * @return bool
      */
-    protected function emailExists($email)
+    public function emailExists($email)
     {
         $sql = 'SELECT * FROM users WHERE email = :email';
 

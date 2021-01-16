@@ -1,5 +1,8 @@
 # Model View Controller (MVC)
 
+Description: This is a combination of three Udemy courses about building an MVC Framework.
+                It will be the basis of some "How To" videos to help others. 
+
 ## Commits
 
 * Initial commit - repo and project created
@@ -13,3 +16,4 @@
 * MVC framework complete
     * Next step is adding Registration and Login System
 * Start building Complete Registration and Login System
+* Add browser validation using JavaScript
