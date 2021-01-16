@@ -41,4 +41,11 @@ class Config
      * @var string
      */
     const DB_PASSWORD = 'YourDBPassword';
+
+    /**
+         * Show or hide error messages on screen
+         * True for development false for production
+         * @var boolean
+         */
+        const SHOW_ERRORS = true;
 }

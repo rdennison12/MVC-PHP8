@@ -12,3 +12,4 @@
 * Begin implementing the model and configuration
 * MVC framework complete
     * Next step is adding Registration and Login System
+* Start building Complete Registration and Login System
